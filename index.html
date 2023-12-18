@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Taxas GC</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Calculadora de Taxas</h1>
+        </header>
+        <div class="wrapper">
+            <div class="inputs">
+                <label>Valor da Compra:</label><input class="value-input" type="number" placeholder="Digite o valor..."
+                    min="50">
+                <label>Qdt de parcelas:</label><input class="qtd-input" type="number" placeholder="2 a 18" min="2"
+                    max="18">
+            </div>
+            <button onclick="calcTaxes()" class="calc-btn">Calcular</button>
+        </div>
+        <!--<div class="result">
+            <p class="final-result">Sua compra terá o valor total de<bR>R$ em  parcelas de R$</p>
+        </div>
+         -->
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
