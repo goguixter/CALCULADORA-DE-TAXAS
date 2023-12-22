@@ -12,7 +12,9 @@ body{
     background-size: cover;
     background-repeat: repeat-y;
 }
-
+main{
+    padding: 10px 20%;
+}
 header{
     padding: 20px 40px;
 }
@@ -21,7 +23,7 @@ header{
     width: 100%;
     padding: 10px 40px;
 }
-.qtd-input, .value-input{
+.select-installments, .value-input{
     color: #ffff;
     background-color: #000000;
     width: 400px;
@@ -86,57 +88,71 @@ h1{
     margin: 0;
 }
 
+
 .final-result{
-    width: 70%;
-    padding: 40px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
     background-color: #ffffff;
-    font-size: 36px;
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
 }
-
-@media screen and (max-width: 780px){
-
-.wrapper{
-    padding: 10px 10%;
-}
-h1{
-    font-size: 55px;
-}
-.final-result{
-    font-size: 24px;
+section{
+    display: block;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10%;
+}
+.description{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
 }
 
-}
-@media screen and (max-width: 555px){
-    h1{
-        font-size: 36px;
+@media screen and (max-width:890px){
+   h1{
+        font-size: 50px;
     }
 
     .inputs{
-        font-size: 24px;
+        width: 100%;
     }
-    .qtd-input, .value-input{
+    .calc-btn{
+        width: 80%;
+    }
+
+    .select-installments, .value-input{
         width: 100%;
         font-size: 18px;
     }
-    .calc-btn{
-        width: 100%;
-        font-size: 24px;
-    }
-    .final-result{
-        font-size: 24px;
+}
+
+@media screen and (max-width:890px){
+    .description{
+        font-size: 20px;
+        font-weight: 700;
     }
 
-    @media screen and (max-width: 400px){
-        .inputs{
-            font-size: 18px;
-        }
-        header{
-            padding: 10px;
-        }
+    main{
+        padding: 10px 2%;
     }
+
+    .inputs{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 36px;
+    }
+    .calc-btn{
+        height: 40px;
+        font-size: 18px;
+    }
+    .description{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
 }
