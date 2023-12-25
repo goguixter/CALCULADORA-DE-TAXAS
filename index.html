@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora de Taxas GC Importados</title>
+</head>
+
+<body>
+    <section>
+        <div class="container1">
+            <h2><i class="bi bi-cash-coin"></i>Valor à receber:</h2>
+            <input type="number" class="insertValue" placeholder="Digite o valor a receber">
+        </div>
+        <div class="container2">
+            <h2><i class="bi bi-credit-card-fill"></i>Bandeira ultilizada:</h2>
+            <div class="card-type">
+                <div class="cardType1">
+                    <input value="master/visa" class="flag1" type="radio" name="cardSelect"> 
+                    <label for="flag1">Master/Visa</label>
+                </div>
+                <div class="cardType2">
+                    <input value="outras" class="flag2" type="radio" name="cardSelect">
+                    <label for="flag2">Outras Bandeiras</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container3">
+            <h2><i class="bi bi-credit-card"></i>Quantidade de parcelas:</h2>
+            <select name="instalmentsSelect" class="instalmentsSelect" id="instalmentsSelect">
+                <option value="1">À Vista</option>
+                <option value="2">2 Parcelas</option>
+                <option value="3">3 Parcelas</option>
+                <option value="4">4 Parcelas</option>
+                <option value="5">5 Parcelas</option>
+                <option value="6">6 Parcelas</option>
+                <option value="7">7 Parcelas</option>
+                <option value="8">8 Parcelas</option>
+                <option value="9">9 Parcelas</option>
+                <option value="10">10 Parcelas</option>
+                <option value="11">11 Parcelas</option>
+                <option value="12">12 Parcelas</option>
+                <option value="13">13 Parcelas</option>
+                <option value="14">14 Parcelas</option>
+                <option value="15">15 Parcelas</option>
+                <option value="16">16 Parcelas</option>
+                <option value="17">17 Parcelas</option>
+                <option value="18">18 Parcelas</option>
+            </select>
+            
+        </div>
+        <button class="calcBtn">CALCULAR</button>
+        <div class="final-result">           
+            <p class="result"></p>
+        </div>
+     
+    </section>
+<script src="./script.js"></script>
+</body>
+
+</html>
